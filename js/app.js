@@ -118,18 +118,35 @@ document.getElementById('user_name').innerHTML = username
 // var gaveteiro = ['Meias', 'Gravatas', 'Documentos', 'Salgadinhos']
 // console.log(gaveteiro[0])
 
-var personagens = ['Mestre Yoda', 'Luke', 'Princesa Leia', 'Vader']
-personagens.push('C3Po') // Adiciona mais uma posição sempre na ultima posição
-personagens.push('R2D2') 
+// var personagens = ['Mestre Yoda', 'Luke', 'Princesa Leia', 'Vader']
+// personagens.push('C3Po') // Adiciona mais uma posição sempre na ultima posição
+// personagens.push('R2D2') 
 
-//personagens.pop remove o ultimo item da lista
+// //personagens.pop remove o ultimo item da lista
 
-personagens = personagens.filter(function(p){ // Filtra e ignora o item
-    return p !== 'Vader'
-})
+// personagens = personagens.filter(function(p){ // Filtra e ignora o item
+//     return p !== 'Vader'
+// })
 
-personagens = personagens.filter(function(p){ // Filtra e exibe apenas o item
-    return p === 'Mestre Yoda'
-})
+// personagens = personagens.filter(function(p){ // Filtra e exibe apenas o item
+//     return p === 'Mestre Yoda'
+// })
 
-console.log(personagens)
+// console.log(personagens)
+
+//  Controles de repetição ou  Laços de refetição //
+
+var personagens = ['Mestre Yoda', 'Luke', 'Princesa Leia', 'Vader','R2D2']
+
+// personagens.forEach (function(p){
+//     console.log(p)
+// })
+
+// for (var i in personagens) {
+//     console.log(personagens[i])
+// }
+
+// for (var i = 0; i <= 10; i++) {
+//     console.log(i)
+
+// }
