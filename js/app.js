@@ -136,7 +136,7 @@ document.getElementById('user_name').innerHTML = username
 
 //  Controles de repetição ou  Laços de refetição //
 
-var personagens = ['Mestre Yoda', 'Luke', 'Princesa Leia', 'Vader','R2D2']
+//var personagens = ['Mestre Yoda', 'Luke', 'Princesa Leia', 'Vader','R2D2']
 
 // personagens.forEach (function(p){
 //     console.log(p)
@@ -150,3 +150,18 @@ var personagens = ['Mestre Yoda', 'Luke', 'Princesa Leia', 'Vader','R2D2']
 //     console.log(i)
 
 // }
+
+// Objetos //
+
+var personagens = {
+    nome : 'Mestre Yoda',
+    idade : 100,
+    jedi : true
+    mostraIdade: function() {
+        console.log('A idade do mestre  ${this.nome} é ${this.idade} anos.')   //No lugar das aspas usa-se apostrofo  
+        }
+}
+
+    console.log(personagens)
+    personagens.mostraIdade()
+
