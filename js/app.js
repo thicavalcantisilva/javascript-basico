@@ -93,21 +93,43 @@ document.getElementById('user_name').innerHTML = username
 //Então valor não devera ser deduzido do meu saldo
 //E Deve mostrar uma msg  de alerta informando limite maximo
 
-var saldo = 1000  
-var valormaximo = 1000
+// var saldo = 1000  
+// var valormaximo = 1000
 
-    function saque (valor) {
+//     function saque (valor) {
 
-        if(valor > saldo){
-            alert('Saldo insuficiente')
+//         if(valor > saldo){
+//             alert('Saldo insuficiente')
 
-        } else if(valor > valormaximo){
-            alert('Valor máximo de saque atingido')
-        } else {
-            saldo = saldo - valor
-            console.log('Saque realizado com sucesso!')
+//         } else if(valor > valormaximo){
+//             alert('Valor máximo de saque atingido')
+//         } else {
+//             saldo = saldo - valor
+//             console.log('Saque realizado com sucesso!')
         
-    }
-}
-    saque(30)
-    console.log('Saldo = ' + saldo)
+//     }
+// }
+//     saque(30)
+//     console.log('Saldo = ' + saldo)
+
+
+//   Arrays (listas) - Objeto que armazena um conjunto de dados //
+
+// var gaveteiro = ['Meias', 'Gravatas', 'Documentos', 'Salgadinhos']
+// console.log(gaveteiro[0])
+
+var personagens = ['Mestre Yoda', 'Luke', 'Princesa Leia', 'Vader']
+personagens.push('C3Po') // Adiciona mais uma posição sempre na ultima posição
+personagens.push('R2D2') 
+
+//personagens.pop remove o ultimo item da lista
+
+personagens = personagens.filter(function(p){ // Filtra e ignora o item
+    return p !== 'Vader'
+})
+
+personagens = personagens.filter(function(p){ // Filtra e exibe apenas o item
+    return p === 'Mestre Yoda'
+})
+
+console.log(personagens)
