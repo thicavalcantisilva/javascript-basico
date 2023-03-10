@@ -156,12 +156,11 @@ document.getElementById('user_name').innerHTML = username
 var personagens = {
     nome : 'Mestre Yoda',
     idade : 100,
-    jedi : true
+    jedi : true,
     mostraIdade: function() {
         console.log('A idade do mestre  ${this.nome} é ${this.idade} anos.')   //No lugar das aspas usa-se apostrofo  
         }
 }
-
     console.log(personagens)
     personagens.mostraIdade()
 
