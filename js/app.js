@@ -5,7 +5,7 @@ var username = 'Thi Cavalcanti'
 document.getElementById('user_name').innerHTML = username
 
 
-// Declaração de variavel flexivel, com tipagem dinamica
+// Declaração de variavel flexivel, com tipagem dinamica.
 
 //var nome = 'Mestre Yoda'
 //var idade = 100
