@@ -42,5 +42,72 @@ document.getElementById('user_name').innerHTML = username
 // }
 
 // var resultado = soma(2,2)
-
 // console.log(resultado)
+
+
+//  Controle de fluxos  // Desenvolvimento guiado por comportamento
+
+// Sendo um cliente correntista
+// Posso sacar dinheiro em caixas eletronicos
+// Para poder utilizar em locais que não aceitam cartão 
+
+
+
+// Cenario 1: Saque com Sucesso 
+// Dado que meu saldo é de 1000 reais
+// Quando faço um saque de 500 reais
+// Então o valor do saque deve ser deduzido do mel saldo
+
+// var saldo = 1000
+//     function saque (valor){
+//         saldo = saldo - valor 
+
+//     }
+//     saque(500)
+//     console.log(saldo)
+
+
+//Cenario 2: Saque com valor acima do Saldo
+//Dado que meu saldo é de 1000
+//Quando faço um saque de 1001
+//Então valor não deve ser deduzido do meu saldo e exibir msg que valor superior ao saldo
+
+// var saldo = 1000    
+//     function saque (valor) {
+
+//         if(valor > saldo){
+//             alert('Saldo insuficiente')
+//     }   else {
+//         saldo = saldo - valor
+//     }
+
+// }
+//     saque(1001)
+//     console.log(saldo)
+
+
+//Cenario 3: Saldo com valor maximo
+//Dado que meu saldo é de 1000 
+//E valor maximo de saque é de 700
+//Quando faço saque de 701
+//Então valor não devera ser deduzido do meu saldo
+//E Deve mostrar uma msg  de alerta informando limite maximo
+
+var saldo = 1000  
+var valormaximo = 1000
+
+    function saque (valor) {
+
+        if(valor > saldo){
+            alert('Saldo insuficiente')
+
+        } else if(valor > valormaximo){
+            alert('Valor máximo de saque atingido')
+        } else {
+            saldo = saldo - valor
+            console.log('Saque realizado com sucesso!')
+        
+    }
+}
+    saque(30)
+    console.log('Saldo = ' + saldo)
