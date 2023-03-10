@@ -2,7 +2,8 @@ console.log('Olá, Javascript!')
 
 var username = 'Thi Cavalcanti'
 
-document.getElementById('user_name').innerHTML = username 
+document.getElementById('user_name').innerHTML = username
+//
 
 // Declaração de variavel flexivel, com tipagem dinamica
 
